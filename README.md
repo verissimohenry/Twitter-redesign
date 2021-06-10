@@ -1,24 +1,69 @@
-# README
+# Friends
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A social media website build with Ruby on Rails, where you can create and like tweets, follow people and see their tweets on your timeline.
 
-Things you may want to cover:
+![]()
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby v2.7.0
+- Ruby on Rails v5.2.4
 
-* Configuration
+## Live Demo
 
-* Database creation
+[Live demo]()
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
+To get a local copy up and running follow these simple example steps.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Prerequisites
 
-* Deployment instructions
+Ruby: 2.6.3  
+Rails: 5.2.3  
+Postgres: >=9.5  
+Rspec gem
 
-* ...
+### Setup
+
+Install gems with:
+
+```
+$ bundle install
+```
+
+Setup database with:
+
+```
+$ rails db:create
+$ rails db:migrate
+```
+
+## Usage
+
+Start server with:
+
+```
+$ rails server
+```
+
+Open `http://localhost:3000/` in your browser.
+
+## AUTHOR
+
+👤 **Verissimo Henry**
+
+- Github: [@githubhandle](https://github.com/verissimohenry)
+- Twitter: [@twitterhandle](https://twitter.com/verissimohenry)
+- Linkedin: [linkedin](https://www.linkedin.com/in/henry-verissimo-618906167/)
+- Email: verissimohenry04@gmail.com
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used.
+- Inspiration
+- etc
