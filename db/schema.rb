@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_10_131439) do
+ActiveRecord::Schema.define(version: 2021_06_10_131736) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -78,4 +78,14 @@ ActiveRecord::Schema.define(version: 2021_06_10_131439) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
+  add_foreign_key "conversations", "users"
+  add_foreign_key "conversations", "users", column: "other_user_id"
+  add_foreign_key "followings", "users"
+  add_foreign_key "followings", "users", column: "follower_id"
+  add_foreign_key "likes", "tweets"
+  add_foreign_key "likes", "users"
+  add_foreign_key "messages", "conversations"
+  add_foreign_key "messages", "users", column: "receive_user_id"
+  add_foreign_key "messages", "users", column: "send_user_id"
+  add_foreign_key "tweets", "users", column: "author_id"
 end
