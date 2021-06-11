@@ -1,5 +1,18 @@
 require 'rails_helper'
 
 RSpec.describe Message, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context 'validation tests' do
+    it 'returns false if all params are not filled in.' do
+      @tech = Message.new(tech_desc: 'uwadonat@gmail.com').save
+      expect(@tech).to eq(false)
+    end
+  end
+
+  describe 'associations' do
+    it { should belong_to(:user).class_name('User') }
+  end
+
+  describe 'validations' do
+    it { should validate_presence_of(:tech_desc) }
+  end
 end
