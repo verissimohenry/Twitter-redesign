@@ -10,7 +10,7 @@ gem 'meta-tags-helpers', '~> 0.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg', '0.18.1', group: :production
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -47,6 +47,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+gem 'sqlite3', group: :development
+
+gem 'rails_12factor', group: :production
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
