@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Message, type: :model do
   context 'validation tests' do
     it 'returns false if all params are not filled in.' do
-      @tech = Message.new(tech_desc: 'uwadonat@gmail.com').save
+      @tech = Message.new(tech_desc: 'verissimohenry04@gmail.com').save
       expect(@tech).to eq(false)
     end
   end

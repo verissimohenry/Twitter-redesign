@@ -6,6 +6,6 @@ RSpec.describe Like, type: :model do
   end
 
   describe 'validations' do
-    it { should validate_presence_of(:technology_id) }
+    it { should validate_presence_of(:message_id) }
   end
 end
