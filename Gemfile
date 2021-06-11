@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
+gem 'rspec-rails'
 
 gem 'devise'
 gem 'meta-tags-helpers', '~> 0.2.0'
