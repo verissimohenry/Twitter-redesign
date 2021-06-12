@@ -48,9 +48,13 @@ group :development do
   gem 'spring'
 end
 
-gem 'sqlite3', group: :development
+group :development, :test do
+  gem 'sqlite3'
+end
 
-gem 'rails_12factor', group: :production
+group :development :production do
+  gem 'rails_12factor', 
+end 
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
