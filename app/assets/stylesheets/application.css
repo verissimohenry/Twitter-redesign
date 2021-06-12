@@ -13,9 +13,18 @@
  *= require_tree .
  *= require_self
  */
-primary-color : #53a7e7;
-secondary-color: #213246;
-text-color: #687d92;
+
+ primary-color { 
+  color: #53a7e7;
+}  
+
+secondary-color { 
+  color: #213246;
+}  
+
+text-color { 
+  color: #687d92;
+}  
 
 * {
   font-family: "Roboto", sans-serif;
@@ -28,7 +37,7 @@ i {
 
 a:hover {
   text-decoration: none;
-  color: darken(text-color, 20);
+  color: darken("text-color", 20);
 }
 
 ul {
