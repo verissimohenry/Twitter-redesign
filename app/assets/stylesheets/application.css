@@ -51,12 +51,12 @@ ul {
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: secondary-color;
-  color: text-color;
+  background-color: "secondary-color";
+  color: "text-color";
+}
 
-  &-top {
-    background-color: darken(secondary-color, 3);
-  }
+.navbar-top {
+  background-color: darken("secondary-color", 3);
 }
 
 .img-logo {
@@ -70,11 +70,12 @@ ul {
 
 .fa-minus,
 .fa-plus {
-  color: lighten(text-color, 15);
+  color: lighten("text-color", 15);
+}
 
-  &:hover {
-    color: text-color;
-  }
+.fa-minus,
+.fa-plus :hover {
+  color: "text-color";
 }
 
 .like-con {
@@ -119,7 +120,7 @@ ul {
 
 .navbar {
   margin-left: 250px;
-  background-color: primary-color;
+  background-color: "primary-color";
   z-index: 3;
   height: 70px;
   position: fixed;
@@ -129,19 +130,20 @@ ul {
 }
 
 .fa-co {
-  color: darken(primary-color, 20);
+  color: darken("primary-color", 20);
+}
 
-  &:hover {
-    cursor: pointer;
-  }
+.fa-co
+:hover {
+  cursor: pointer;
 }
 
 .follower-con {
-  border: 1px solid darken(secondary-color, 10);
+  border: 1px solid darken("secondary-color", 10);
 }
 
 .follower-right {
-  border-right: 1px solid darken(secondary-color, 10);
+  border-right: 1px solid darken("secondary-color", 10);
 }
 
 .dropdown-menu-right {
@@ -153,7 +155,7 @@ ul {
   top: 60px;
   padding: 0 0.5rem;
   text-align: center;
-  color: text-color;
+  color: "text-color";
   width: 350px;
   z-index: 999999;
 }
@@ -167,14 +169,15 @@ ul {
   top: 60px;
   padding: 0 0.5rem;
   text-align: center;
-  color: text-color;
+  color: "text-color";
   width: 350px;
   z-index: 999999;
+}
 
-  .img-dropdown {
-    width: 40px;
-    height: 40px;
-  }
+
+.img-dropdown {
+  width: 40px;
+  height: 40px;
 }
 
 .top-user {
@@ -189,26 +192,29 @@ ul {
   right: 5px;
   color: lighten(#687d92, 20);
   transition: 250ms;
+}
 
-  &:hover {
-    color: #687d92;
-  }
+.fa-plus-square-o,
+.fa-minus-square-o,
+.fa-pencil:hover {
+  color: #687d92;
 }
 
 .color {
-  color: text-color;
+  color: "text-color";
 }
 
 .top-link {
-  border-bottom: lighten(text-color, 40) solid 1px;
+  border-bottom: lighten("text-color", 40) solid 1px;
 }
 
 .dropdown-item {
   padding: 1rem;
+}
 
-  &:hover {
-    border-radius: 10px;
-  }
+.dropdown-item
+:hover {
+  border-radius: 10px;
 }
 
 .drop-none {
@@ -221,14 +227,17 @@ ul {
 }
 
 .card {
-  box-shadow: text-color 0 0 5px;
+  box-shadow: "text-color" 0 0 5px;
+  }
 
+  .card 
   a {
     color: "text-color";
+  }
 
-    &:hover {
-      color: darken("text-color", 20);
-    }
+  .card
+  :hover {
+    color: darken("text-color", 20);
   }
 
   .card-img {
