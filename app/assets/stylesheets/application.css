@@ -14,17 +14,17 @@
  *= require_self
  */
 
- primary-color { 
+primary-color {
   color: #53a7e7;
-}  
+}
 
-secondary-color { 
+secondary-color {
   color: #213246;
-}  
+}
 
-text-color { 
+text-color {
   color: #687d92;
-}  
+}
 
 * {
   font-family: "Roboto", sans-serif;
@@ -133,8 +133,7 @@ ul {
   color: darken("primary-color", 20);
 }
 
-.fa-co
-:hover {
+.fa-co :hover {
   cursor: pointer;
 }
 
@@ -174,7 +173,6 @@ ul {
   z-index: 999999;
 }
 
-
 .img-dropdown {
   width: 40px;
   height: 40px;
@@ -212,8 +210,7 @@ ul {
   padding: 1rem;
 }
 
-.dropdown-item
-:hover {
+.dropdown-item :hover {
   border-radius: 10px;
 }
 
@@ -228,23 +225,20 @@ ul {
 
 .card {
   box-shadow: "text-color" 0 0 5px;
-  }
+}
 
-  .card 
-  a {
-    color: "text-color";
-  }
+.card a {
+  color: "text-color";
+}
 
-  .card
-  :hover {
-    color: darken("text-color", 20);
-  }
+.card :hover {
+  color: darken("text-color", 20);
+}
 
-  .card-img {
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-  }
+.card-img {
+  background-size: cover;
+  background-position: center;
+  height: 150px;
 }
 
 .top-div {
@@ -253,15 +247,15 @@ ul {
 
 .left-items {
   color: "text-color";
+}
 
-  &:hover {
-    color: lighten("text-color", 30);
-    background-color: darken("primary-color", 10);
+.left-item :hover {
+  color: lighten("text-color", 30);
+  background-color: darken("primary-color", 10);
+}
 
-    & i {
-      color: lighten("text-color", 30);
-    }
-  }
+.left-item i {
+  color: lighten("text-color", 30);
 }
 
 .content-page {
@@ -390,11 +384,9 @@ p {
   display: none;
 }
 
-.message-con {
-  img {
-    width: 40px;
-    height: 40px;
-  }
+.message-con img {
+  width: 40px;
+  height: 40px;
 }
 
 .ordering {
