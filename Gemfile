@@ -52,9 +52,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-group :development :production do
-  gem 'rails_12factor', 
-end 
+gem 'rails_12factor', group: :production
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
