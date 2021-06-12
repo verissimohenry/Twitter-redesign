@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-primary-color: #53a7e7;
+primary-color : #53a7e7;
 secondary-color: #213246;
 text-color: #687d92;
 
@@ -144,7 +144,7 @@ ul {
   top: 60px;
   padding: 0 0.5rem;
   text-align: center;
-  color: $text-color;
+  color: text-color;
   width: 350px;
   z-index: 999999;
 }
@@ -291,10 +291,10 @@ ul {
   min-width: 95%;
   border-radius: 7px;
   background-color: #fff;
+}
 
-  p {
-    word-break: "break-all";
-  }
+p {
+  word-break: "break-all";
 }
 
 .word-breaker {
@@ -385,21 +385,21 @@ ul {
 
 .navbar-right-bottom {
   position: relative;
+}
 
-  .text-mute {
-    font-size: 15px;
-    color: lighten(#777, 10);
-  }
+.text-mute {
+  font-size: 15px;
+  color: lighten(#777, 10);
+}
 
-  .img-dropdown {
-    width: 40px;
-    height: 40px;
-  }
+.img-dropdown {
+  width: 40px;
+  height: 40px;
 }
 
 .signup {
   position: relative;
-  background-image: url("https://www.freepik.com/free-vector/blue-pink-halftone-background_14731333.htm#page=2&query=background&position=10");
+  background-image: url("https://img2.pngio.com/wave-vector-abstract-background-waves-line-blue-orange-orange-wave-line-png-640_640.png");
   background-size: cover;
 }
 
