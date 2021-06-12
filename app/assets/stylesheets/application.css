@@ -14,7 +14,7 @@
  *= require_self
  */
 
-primary-color {
+ primary-color {
   color: #53a7e7;
 }
 
@@ -37,7 +37,7 @@ i {
 
 a:hover {
   text-decoration: none;
-  color: darken("text-color", 20);
+  color: darken(#687d92, 20);
 }
 
 ul {
@@ -51,12 +51,12 @@ ul {
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: "secondary-color";
-  color: "text-color";
+  background-color: #213246;
+  color: #687d92;
 }
 
 .navbar-top {
-  background-color: darken("secondary-color", 3);
+  background-color: darken(#213246, 3);
 }
 
 .img-logo {
@@ -70,12 +70,12 @@ ul {
 
 .fa-minus,
 .fa-plus {
-  color: lighten("text-color", 15);
+  color: lighten(#687d92, 15);
 }
 
 .fa-minus,
 .fa-plus :hover {
-  color: "text-color";
+  color: #687d92;
 }
 
 .like-con {
@@ -95,7 +95,7 @@ ul {
 }
 
 .show-active {
-  border-bottom: 3px solid primary-color;
+  border-bottom: 3px solid #53a7e7;
   color: darken(#213246, 20) !important;
 }
 
@@ -120,7 +120,7 @@ ul {
 
 .navbar {
   margin-left: 250px;
-  background-color: "primary-color";
+  background-color: #53a7e7;
   z-index: 3;
   height: 70px;
   position: fixed;
@@ -130,7 +130,7 @@ ul {
 }
 
 .fa-co {
-  color: darken("primary-color", 20);
+  color: darken(#53a7e7, 20);
 }
 
 .fa-co :hover {
@@ -138,11 +138,11 @@ ul {
 }
 
 .follower-con {
-  border: 1px solid darken("secondary-color", 10);
+  border: 1px solid darken(#213246, 10);
 }
 
 .follower-right {
-  border-right: 1px solid darken("secondary-color", 10);
+  border-right: 1px solid darken(#213246, 10);
 }
 
 .dropdown-menu-right {
@@ -154,7 +154,7 @@ ul {
   top: 60px;
   padding: 0 0.5rem;
   text-align: center;
-  color: "text-color";
+  color: #687d92;
   width: 350px;
   z-index: 999999;
 }
@@ -168,7 +168,7 @@ ul {
   top: 60px;
   padding: 0 0.5rem;
   text-align: center;
-  color: "text-color";
+  color: #687d92;
   width: 350px;
   z-index: 999999;
 }
@@ -199,11 +199,11 @@ ul {
 }
 
 .color {
-  color: "text-color";
+  color: #687d92;
 }
 
 .top-link {
-  border-bottom: lighten("text-color", 40) solid 1px;
+  border-bottom: lighten(#687d92, 40) solid 1px;
 }
 
 .dropdown-item {
@@ -224,15 +224,15 @@ ul {
 }
 
 .card {
-  box-shadow: "text-color" 0 0 5px;
+  box-shadow: #687d92 0 0 5px;
 }
 
 .card a {
-  color: "text-color";
+  color: #687d92;
 }
 
 .card :hover {
-  color: darken("text-color", 20);
+  color: darken(#687d92, 20);
 }
 
 .card-img {
@@ -246,16 +246,16 @@ ul {
 }
 
 .left-items {
-  color: "text-color";
+  color: #687d92;
 }
 
 .left-item :hover {
-  color: lighten("text-color", 30);
-  background-color: darken("primary-color", 10);
+  color: lighten(#687d92, 30);
+  background-color: darken(#53a7e7, 10);
 }
 
 .left-item i {
-  color: lighten("text-color", 30);
+  color: lighten(#687d92, 30);
 }
 
 .content-page {
@@ -358,7 +358,7 @@ p {
   background-color: rgb(250, 250, 250);
   padding: 1rem;
   width: 280px;
-  border-left: lighten("text-color", 40) solid 1px;
+  border-left: lighten(#687d92, 40) solid 1px;
 }
 
 .lighter {
@@ -367,13 +367,13 @@ p {
 }
 
 .top-right-followers {
-  border-top: lighten("text-color", 40) solid 1px;
-  border-bottom: lighten("text-color", 40) solid 1px;
+  border-top: lighten(#687d92, 40) solid 1px;
+  border-bottom: lighten(#687d92, 40) solid 1px;
 }
 
 .middle-con {
-  border-left: lighten("text-color", 40) solid 1px;
-  border-right: lighten("text-color", 40) solid 1px;
+  border-left: lighten(#687d92, 40) solid 1px;
+  border-right: lighten(#687d92, 40) solid 1px;
 }
 
 .text-muted {
@@ -419,7 +419,7 @@ p {
 }
 
 .right-bottom-bottom {
-  border-top: lighten("text-color", 40) solid 1px;
+  border-top: lighten(#687d92, 40) solid 1px;
 }
 
 .profile-img {
