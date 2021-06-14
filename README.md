@@ -11,7 +11,7 @@ A social media website build with Ruby on Rails, where you can create and like t
 
 ## Live Demo
 
-[Live demo]()
+[Live demo](https://glacial-gorge-49167.herokuapp.com/)
 
 ## Getting Started
 
