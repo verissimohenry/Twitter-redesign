@@ -55,7 +55,7 @@
 <div class="navbar-left">
   <div class="navbar-left-top">
     <div class="text-center p-3 d-flex align-items-center">
-      <div style="width: 80px;height:80px;background-image: url('<%= current_user.profile%>')" class=" mx-3 left-img">
+      <div style="width: 80px;height:80px;background-image: url('<%= current_user.profile%>'),url('https://hajiri.co/uploads/no_image.jpg')" class=" mx-3 left-img">
       </div>
       <%= link_to current_user.username.capitalize, user_path(current_user), class: "color" %>
     </div>
