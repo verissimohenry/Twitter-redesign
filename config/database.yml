@@ -81,7 +81,6 @@ test:
 #
 production:
   <<: *default
-  adapter: postgresql
   database: Twitter_redesign_production
   username: Twitter_redesign
   password: <%= ENV['TWITTER_REDESIGN_DATABASE_PASSWORD'] %>
