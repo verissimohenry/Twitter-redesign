@@ -1,53 +1,72 @@
-# Friends
+# Twitter-redesign
 
 A social media website build with Ruby on Rails, where you can create and like tweets, follow people and see their tweets on your timeline.
 
-![screenshot](app/assets/images/friends-pic.PNG.png)
+![screenshot](app/assets/images/twitter-pic.PNG)
 
 ## Built With
 
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
+- Ruby on Rails
+- Active Record
+- Bootstrap 4
+- Ruby
+- Rspec gem
 
-## Live Demo
+## Rspec testing
+
+> To test of models, write the following in your terminal:
+
+```
+$ rspec
+```
+
+## live version
 
 [Live demo](https://glacial-gorge-49167.herokuapp.com/)
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy of the repository please run the following commands on your terminal:
 
-### Prerequisites
+```
+$ cd <folder>
+```
 
-Ruby: 2.6.3  
-Rails: 5.2.3  
-Postgres: >=9.5  
-Rspec gem
+```
+$ git clone git@github.com:verissimohenry/Twitter-redesign.git
+```
 
-### Setup
+```
+$ cd Twitter-redesign
+```
 
-Install gems with:
+> Install webpack
+
+```
+$ rails webpacker:install
+```
+
+> Migrate the database
+
+```
+$ rails db:migrate
+```
 
 ```
 $ bundle install
 ```
 
-Setup database with:
-
-```
-$ rails db:create
-$ rails db:migrate
-```
-
-## Usage
-
-Start server with:
+> Run the rails server
 
 ```
 $ rails server
 ```
 
-Open `http://localhost:3000/` in your browser.
+> In order to use the website signup and login
+
+> Post your New technology
+
+> Visit profile of other user and follow some if you want by clicking on view profile or follow button
 
 ## AUTHOR
 
@@ -64,6 +83,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used.
+- Hat tip to anyone whose code was used
 - Inspiration
 - etc
+
+## License
+
+- This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+- This project is [creativecommons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
