@@ -11,8 +11,17 @@ RSpec.describe Following, type: :model do
       expect(@invite).to_not be_valid
     end
 
-    describe 'validations' do
-      it { should validate_presence_of(:followed_id) }
+    describe 'validates Follow associations' do
+      it 'validates if user is added to users followings' do
+        Following.create(follower: @user1, followed: @user2)
+        expect(already_follow?).to_not eq(true)
+      end
+    end
+  
+    describe 'associations' do
+      it 'should belong to follower' do
+        expect { should belong_to(:follower) }
+      end
     end
   end
 end
