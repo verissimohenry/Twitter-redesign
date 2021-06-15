@@ -49,7 +49,6 @@ group :development do
 end
 
 group :development, :test do
-  gem 'appmap'
   gem 'sqlite3'
 end
 
