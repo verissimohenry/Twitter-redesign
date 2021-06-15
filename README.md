@@ -2,7 +2,7 @@
 
 A social media website build with Ruby on Rails, where you can create and like tweets, follow people and see their tweets on your timeline.
 
-![screenshot](app/assets/images/friends-pic.PNG)
+![screenshot](app/assets/images/twitter-pic.PNG)
 
 ## Built With
 
