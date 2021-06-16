@@ -34,3 +34,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore folder named 'hint-report'
+/[h1]int-report/
