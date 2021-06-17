@@ -1,4 +1,6 @@
 require 'test_helper'
+require 'capybara/rails'
+
 
 class UsersSignupTest < ActionDispatch::IntegrationTest
   def setup
