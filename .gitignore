@@ -30,7 +30,7 @@ hint-report/
 
 /public/packs
 /public/packs-test
-hint-report
+hint_report
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
