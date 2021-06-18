@@ -103,7 +103,7 @@ module ApplicationHelper
     elsif user.id == current_user.id
       nil
     else
-      (link_to 'MESSAGE', conversations_path(user), method: :Post.include(:comment), class: 'px-4 py-3 color').html_safe
+      (link_to 'MESSAGE', conversations_path(user), method: :post, class: 'px-4 py-3 color').html_safe
     end
   end
 
