@@ -18,8 +18,8 @@ module ApplicationHelper
   end
 
   def likebtn(tweet)
-    like = Like.where(tweet_id: tweet.id).where(user_id: current_user.id).first
-    if Like.where(tweet_id: tweet.id).where(user_id: current_user.id).any?
+    like = tweet.likes.first
+    if tweet.likes.any?
       (link_to "<i class='fa fa-2x fa-thumbs-o-down' aria-hidden='true'></i>".html_safe,
                tweet_like_path(like.tweet_id, like), method: :delete).html_safe
     else
@@ -29,8 +29,7 @@ module ApplicationHelper
   end
 
   def likecount(tweet)
-    #Like.where(tweet_id: tweet.id).count
-    tweet.likes.count
+    tweet.likes.size
   end
 
   def conversation
