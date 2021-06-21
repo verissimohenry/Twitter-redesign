@@ -6,7 +6,7 @@ class TweetsController < ApplicationController
     @rray = []
     @rray.push(current_user.id)
     @array.map { |e| @rray.push(e.follower_id) }
-    @tweets = Tweet.where(author: (current_user.followers.to_a << current_user)).order(created_at: :desc).withlike
+    @tweets = Tweet.where(author: (current_user.followers.to_a << current_user)).order(created_at: :desc).withlike.withauthor
     @people = User.where.not(id: @rray)
   end
 
