@@ -29,7 +29,8 @@ module ApplicationHelper
   end
 
   def likecount(tweet)
-    Like.where(tweet_id: tweet.id).count
+    #Like.where(tweet_id: tweet.id).count
+    tweet.likes.count
   end
 
   def conversation
