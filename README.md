@@ -1,6 +1,6 @@
 # Twitter-redesign
 
-A social media website build with Ruby on Rails, where you can create and like tweets, follow people and see their tweets on your timeline.
+This is a simple social media app developed by using Ruby on Rails, HTML5&CSS3, and MySQL&Database. A user can create a profile with a profile and a background image, and post messages, follow others and be followed by others.
 
 ![screenshot](app/assets/images/twitter-pic.PNG)
 
@@ -26,47 +26,33 @@ $ rspec
 
 ## Getting Started
 
-To get a local copy of the repository please run the following commands on your terminal:
+## Setup
 
-```
-$ cd <folder>
-```
+- Clone this repository (`git@github.com:verissimohenry/Twitter-redesign.git`)
+- Open terminal
+- Change directory by using `cd Twitter-redesign.git`
+- Run `bundle install`
+- Run `rails db:migrate`
+- Open rails server by using `rails s`
+- Open browser and go to http://localhost:3000
 
-```
-$ git clone git@github.com:verissimohenry/Twitter-redesign.git
-```
+## Test app
 
-```
-$ cd Twitter-redesign
-```
+- Follow steps given in Setup part
+- Install Chrome from [main page of Chrome](https://www.google.com/chrome/) or [terminal](https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-ubuntu-20-04/)
+- Run ` bundle exec rspec`
 
-> Install webpack
+## Deploy to Heroku
 
-```
-$ rails webpacker:install
-```
-
-> Migrate the database
-
-```
-$ rails db:migrate
-```
-
-```
-$ bundle install
-```
-
-> Run the rails server
-
-```
-$ rails server
-```
-
-> In order to use the website signup and login
-
-> Post your New technology
-
-> Visit profile of other user and follow some if you want by clicking on view profile or follow button
+- Sign in [Heroku](https://www.heroku.com/).
+- Open your terminal.
+- Run `heroku login`. If you get any error, run `sudo snap install --classic heroku` and [check](https://devcenter.heroku.com/articles/heroku-cli).
+- Create an app by running `heroku create name-of-app`. You may use any name for name of your Heroku app.
+- If you are using sqlite3 for database, update 'database.yml' file by [following steps](https://devcenter.heroku.com/articles/sqlite3).
+- If you are using master branch,run `git push heroku master`. If you are using another branch, run `git push heroku +HEAD:master`.
+- Run `heroku run rake db:migrate` your terminal.
+- Open your app from your [dashboard of heroku](https://dashboard.heroku.com/).
+- Push 'Open app' button to access your app from your dashboard of Heroku..
 
 ## AUTHOR
 
