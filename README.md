@@ -4,6 +4,10 @@ This is a simple social media app developed by using Ruby on Rails, HTML5&CSS3, 
 
 ![screenshot](app/assets/images/twitter-pic.PNG)
 
+## Features
+
+In this project, following and posting opinions like posting a tweet features are implemented.
+
 ## Built With
 
 - Ruby on Rails
@@ -22,9 +26,8 @@ $ rspec
 
 ## live version
 
-[Live demo](https://glacial-gorge-49167.herokuapp.com/)
-
-## Getting Started
+Please click [Live demo](https://glacial-gorge-49167.herokuapp.com/)
+You may use 'anonymous' as username and 'Anonymous' as full name to sign in.
 
 ## Setup
 
