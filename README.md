@@ -1,6 +1,6 @@
 # Twitter-redesign
 
-This is a simple social media app developed by using Ruby on Rails, HTML5&CSS3, and MySQL&Database. A user can create a profile with a profile and a background image, and post messages, follow others and be followed by others.
+This is a simple social media app developed by using Ruby on Rails, HTML5&CSS3, and MySQL&Database. A user can create a profile with a profile and a background image, post messages, follow others, and be followed by others.
 
 ![screenshot](app/assets/images/twitter-pic.PNG)
 
