@@ -224,7 +224,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.1-x86_64-linux)
     thor (1.2.1)
     tilt (2.1.0)
     timeout (0.3.2)
@@ -270,7 +269,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.3)
   meta-tags-helpers (~> 0.2.0)
-  pg (~> 1.1)
+  pg
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.3, >= 6.1.3.2)
@@ -279,7 +278,6 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver
   spring
-  sqlite3
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
