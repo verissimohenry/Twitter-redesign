@@ -1,4 +1,4 @@
- PostgreSQL. Versions 9.3 and up are supported.
+# PostgreSQL. Versions 9.3 and up are supported.
 #
 # Install the pg driver:
 #   gem install pg
@@ -17,14 +17,18 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  username: twitter_redesign 
+  password: henry
+  host: localhost
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %> 
+  
 
 development:
   <<: *default
-  database: Twitter_redesign_development
-
+  database: twitter_redesign_development
+  
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
