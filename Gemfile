@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.2'
-gem 'rspec-rails'
 
 gem 'bullet'
 gem 'devise'
@@ -12,7 +11,10 @@ gem 'meta-tags-helpers', '~> 0.2.0'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use postgresql as the database for Active Record
 #gem 'pg', '~> 1.1'
-gem 'pg'
+#gem 'pg', '~> 1.4.6', :require => 'pg_ext', :platforms => :ruby
+#gem 'pg', '>= 0.18', '< 2.0'
+gem 'pg', '~> 1.5', '>= 1.5.3'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -36,10 +38,14 @@ gem 'dotenv'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'bootstrap', '~> 4.5'
+gem 'hirb'
+gem 'paperclip', '~> 6.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -63,6 +69,8 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
+  gem 'rails-controller-testing'
+  gem 'rspec'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
