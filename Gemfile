@@ -12,7 +12,8 @@ gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use postgresql as the database for Active Record
 #gem 'pg', '~> 1.1'
 #gem 'pg', '~> 1.4.6', :require => 'pg_ext', :platforms => :ruby
-gem 'pg', '>= 0.18', '< 2.0'
+#gem 'pg', '>= 0.18', '< 2.0'
+gem 'pg', '~> 1.5', '>= 1.5.3'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
